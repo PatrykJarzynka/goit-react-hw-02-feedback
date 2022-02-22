@@ -10,7 +10,7 @@ const Fancy = styled.div({
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   let buttons = options.map(option => (
-    <Button key={nanoid()} label={option} changeValue={() => onLeaveFeedback(option)}></Button>
+    <Button key={nanoid()} label={option} changeValue={() => onLeaveFeedback(option)} />
   ));
 
   return <Fancy>{buttons}</Fancy>;

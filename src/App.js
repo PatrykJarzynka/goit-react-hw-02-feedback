@@ -4,7 +4,7 @@ import FeedbackStats from './components/Feedback';
 function App() {
   return (
     <div className="App">
-      <FeedbackStats></FeedbackStats>
+      <FeedbackStats />
     </div>
   );
 }

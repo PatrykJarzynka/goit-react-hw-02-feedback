@@ -43,17 +43,17 @@ class FeedbackStats extends Component {
     return total === 0 ? (
       <div>
         <Fancy>
-          <Section title="Please leave feedback"></Section>
-          <FeedbackOptions options={labels} onLeaveFeedback={this.handleClick}></FeedbackOptions>
-          <Section title="Statistics"></Section>
-          <Notification message="There is no feedback"></Notification>
+          <Section title="Please leave feedback" />
+          <FeedbackOptions options={labels} onLeaveFeedback={this.handleClick} />
+          <Section title="Statistics" />
+          <Notification message="There is no feedback" />
         </Fancy>
       </div>
     ) : (
       <div>
         <Fancy>
-          <Section title="Please leave feedback"></Section>
-          <FeedbackOptions options={labels} onLeaveFeedback={this.handleClick}></FeedbackOptions>
+          <Section title="Please leave feedback" />
+          <FeedbackOptions options={labels} onLeaveFeedback={this.handleClick} />
           <Statistics
             good={this.state.good}
             neutral={this.state.neutral}
