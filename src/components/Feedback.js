@@ -8,9 +8,8 @@ import styled from '@emotion/styled';
 const labels = ['Good', 'Neutral', 'Bad'];
 
 const Fancy = styled.div({
-  textAlign: 'left'
-})
-  
+  textAlign: 'left',
+});
 
 class FeedbackStats extends Component {
   state = {
@@ -58,7 +57,7 @@ class FeedbackStats extends Component {
           <Statistics
             good={this.state.good}
             neutral={this.state.neutral}
-            bad={this.state.neutral}
+            bad={this.state.bad}
             total={total}
             positivePercentage={positive}
           ></Statistics>
